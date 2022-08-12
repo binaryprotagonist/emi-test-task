@@ -1,0 +1,25 @@
+@import './font-faces';
+
+// Font Sizes
+$f-small: 10px;
+$f-regular: 12px;
+$f-regular-large: 16px;
+$f-large: 20px;
+$f-extra-large: 24px;
+
+// Font Family
+$f-montserrat: 'Montserrat-Regular', sans-serif;
+$f-family-regular : 'Montserrat-Regular', sans-serif;
+$f-family-thin : 'Montserrat-Thin', sans-serif;
+$f-family-medium : 'Montserrat-Medium', sans-serif;
+$f-family-bold : 'Montserrat-Bold', sans-serif;
+$f-family-extra-bold : 'Montserrat-Extra-Bold', sans-serif;
+
+$main-font: $f-montserrat;
+$main-font-color: #63717a;
+
+$c-white: #fcfdff;
+$c-black: #000;
+$c-gray: #63717a;
+
+

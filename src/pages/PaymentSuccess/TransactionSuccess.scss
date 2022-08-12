@@ -1,0 +1,33 @@
+.transaction-success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+  padding: 100px;
+  font-weight: 600;
+  width: 300px;
+  p{
+    margin: 10px 0px 15px;
+  }
+  p.heading {
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    color: #3238ed;
+    font-weight: 600;
+  }
+  .btn-marketplace {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    background: #3238ed;
+    width: 167px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .transaction-success {
+    padding: 24px 20px;
+  }
+}

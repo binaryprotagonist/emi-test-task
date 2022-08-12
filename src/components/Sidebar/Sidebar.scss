@@ -1,0 +1,49 @@
+.sidebar {
+    background: #000338;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 32px 55px 10px 180px;
+    .invoice-status-badge {
+      background: #ccfff8;
+      color: #096b66;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 10px;
+      font-weight: 600;
+      margin-left: 5px;
+    }
+    .btn-invoice-download {
+      color: #fff;
+      background: #000338;
+      padding: 5px 15px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+    }
+    .btn-dispute {
+      color: #333ae3;
+      background: #fffffd;
+      padding: 5px 10px;
+      border: 1px solid #333ae3;
+      border-radius: 5px;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    p {
+      margin: 32px auto;
+      span {
+        display: block;
+        padding: 4px 0;
+        font-weight: 600;
+      }
+      &.dispute-transaction-text {
+        font-weight: 600;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .sidebar {
+      padding: 32px 55px 20px 20px;
+    }
+  }

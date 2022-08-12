@@ -1,0 +1,116 @@
+.checkout {
+  width: 700px;
+  padding: 40px 0 0 80px;
+  .checkout-head {
+    .heading {
+      font-size: 15px;
+      color: #000;
+      font-weight: 600;
+      height: 40px;
+      line-height: 30px;
+      display: flex;
+    }
+
+    p:not(:first-child) {
+      color: #8c8ec1;
+      display: inline-block;
+      width: 100px;
+    }
+
+    span {
+      font-weight: 600;
+      color: #000;
+      display: block;
+      margin-top: 5px;
+    }
+  }
+  .divider {
+    height: 1px;
+    width: 100%;
+    background: #e2e7ea;
+    margin: 22px auto;
+  }
+  .checkout-form {
+    .heading {
+      font-size: 15px;
+      color: #000;
+      font-weight: 600;
+      display: flex;
+      margin: 20px auto;
+    }
+    .transfer-input-tab {
+      display: flex;
+      flex-direction: start;
+      input[type='radio'] {
+        display: none;
+      }
+
+      label {
+        font-weight: 600;
+        border: none;
+        background: #f9fbfa;
+        padding: 5px 10px;
+        cursor: pointer;
+        color: #9193ba;
+        font-size: 16px;
+        border-radius: 5px;
+        :not(:first-child) {
+          margin: 0px 15px;
+        }
+      }
+
+      input[type='radio']:checked + label {
+        background: #f3f7ff;
+        color: #3639dc;
+      }
+    }
+
+    .credit-card-wrapper {
+      margin: 20px auto;
+      // .form-group:not(:first-child) {
+      //     margin-left: 20px;
+      // }
+
+      .form-group {
+        display: inline-block;
+        margin: 10px 10px;
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: 600;
+        }
+        input,
+        select {
+          border: 1px solid #b8bad3;
+          border-radius: 6px;
+          padding: 7px 10px;
+        }
+        input[name='expiryDate'] {
+          width: 52px;
+        }
+        input[name='cvv'] {
+          width: 40px;
+        }
+      }
+    }
+  }
+  .btn-confirm-payment {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    background: #3639dc;
+  }
+  .disabled {
+    background: #808080;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .checkout {
+    padding: 24px 20px;
+  }
+  .checkout .checkout-form .transfer-input-tab input[type=radio]:checked + label {
+     font-size: 10px;
+  }
+}
